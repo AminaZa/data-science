@@ -53,7 +53,7 @@ ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
 
 To identify the highest-paying roles and skills, I only got jobs in the United States and looked at their median salary. But first I looked at the salary distributions of common data jobs like Data Scientist, Data Engineer, and Data Analyst, to get an idea of which jobs are paid the most.
 
-View my notebook with detail steps here: [4_Salary_Analysis.ipynb](Project\4_Salary_Analysis.ipynb)
+View my notebook with detail steps here: [4_Salary_Analysis.ipynb](Project/4_Salary_Analysis.ipynb)
 
 #### Visualize Data
 ```python
@@ -86,7 +86,7 @@ fig, ax = plt.subplots(2, 1)
 sns.barplot(data=df_DA_top_pay, x='median', y=df_DA_top_pay.index, hue='median', ax=ax[0], palette='dark:b_r')
 
 # Top 10 Most In-Demand Skills for Data Analystsr')
-sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, hue='median', ax=ax[1], palette='light:b')
+sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, hue='median', ax=ax[2], palette='light:b')
 
 plt.show()
 ```
