@@ -100,3 +100,46 @@ Here's the breakdown of the highest-paid & most in-demand skills for data analys
 - The top graph shows specialized technical skills like dplyr, Bitbucket, and Gitlab are associated with higher salaries, some reaching up to $200K, suggesting that advanced technical proficiency can increase earning potential.
 - The bottom graph highlights that foundational skills like Excel, PowerPoint, and SQL are the most in-demand, even though they may not offer the highest salaries. This demonstrates the importance of these core skills for employability in data analysis roles.
 - There's a clear distinction between the skills that are highest paid and those that are most in-demand. Data analysts aiming to maximize their career potential should consider developing a diverse skill set that includes both high-paying specialized skills and widely demanded foundational skills.
+
+## 4. What is the most optimal skill to learn
+
+To identify the most optimal skills to learn ( the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn.
+
+View my notebook with detailed steps here: [5_Optimal_Skill.ipynb](Project\images\optimal_skills_DA_US.png)
+
+### Visualize Data : 
+```python
+sns.scatterplot(
+    data=df_plot,
+    x='skill_percent',
+    y='median_salary',
+    hue='technology'
+)
+sns.despine()
+sns.set_theme(style='ticks')
+texts= []
+
+for i, txt in enumerate(df_DA_skills_demand.index):
+    x = df_DA_skills_demand['skill_percent'].iloc[i]
+    y = df_DA_skills_demand['median_salary'].iloc[i]
+    t = plt.text(x, y, txt)  # t is the Text object
+    # Manual adjustment BEFORE adjust_text
+    if txt.lower() == "power bi":  # use .lower() to be safe with capitalization
+        t.set_position((x + 0.005, y + 200))  # move right & up
+    if txt.lower() == "sas":
+        t.set_position((x - 0.005, y - 500))  # move left & down
+    texts.append(t)
+```
+
+### Results
+
+![optimal_skill.png](Project/images/optimal_skills_DA_US.png)
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the US.*
+
+### Insight 
+
+- The skill Oracle appears to have the highest median salary of nearly $97K, despite being less common in job postings. This suggests a high value placed on specialized database skills within the data analyst profession.
+- More commonly required skills like Excel and SQL have a large presence in job listings but lower median salaries compared to specialized skills like Python and Tableau, which not only have higher salaries but are also moderately prevalent in job listings.
+- Skills such as Python, Tableau, and SQL Server are towards the higher end of the salary spectrum while also being fairly common in job listings, indicating that proficiency in these tools can lead to good opportunities in data analytics.
+
+
