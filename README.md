@@ -4,7 +4,7 @@
 
 To find the most demanded skills for the top 3 most popular data roles. I filtered out those positions by which ones were the most popular, This query highlights th most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I'm targeting. 
 
-View my notebook with detailed steps here : [2_Skill_Demand.ipynb](Project\2_Skill_Demand.ipynb)
+View my notebook with detailed steps here : [2_Skill_Demand.ipynb](Project/2_Skill_Demand.ipynb)
 *Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.*
 
 ### Visualize Data
@@ -18,7 +18,7 @@ for i, job_title in enumerate(job_titles):
     plt.show()
 ```
 ### Results
-![Visualization of Top Skills for Data Nerda](Project\images\Skill_demand_all_data_roles.png)
+![Visualization of Top Skills for Data Nerda](Project/images/Skill_demand_all_data_roles.png)
 *Bar graph visualizing the trending top skills for data analysts in the US in 2025.*
 
 ### Insights
@@ -30,7 +30,7 @@ for i, job_title in enumerate(job_titles):
 To find how skills are trending in 2023 for Data Analysts, I filtered data analyst positions and grouped the skills by the month of the job postings. This got me the top 5 skills of data analysts by month, showing how popular skills were throughout 2023.
 
 
-View my notebook with detailed steps here:[3_Skill_Trend.ipynb](Project\3_Skill_Trend.ipynb)
+View my notebook with detailed steps here:[3_Skill_Trend.ipynb](Project/3_Skill_Trend.ipynb)
 
 ### Visualize Data
 ```python
@@ -42,7 +42,7 @@ ax=plt.gca()
 ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
 ```
 ### Results
-![Visualization of Top Skills for Data Analysts in the US](Project\images\Skill_Trend_DA.png)
+![Visualization of Top Skills for Data Analysts in the US](Project/images/Skill_Trend_DA.png)
 
 ### Insights:
 - SQL remains the most consistently demanded skill throughout the year, although it shows a gradual decrease in demand.
@@ -65,7 +65,7 @@ plt.show()
 ```
 
 #### Results
-![Visualization_of_Salary_Disribution_of_Data_Jobs_in_the_US](Project\images\Salary_Distribution_in_US.png)
+![Visualization_of_Salary_Disribution_of_Data_Jobs_in_the_US](Project/images/Salary_Distribution_in_US.png)
 *Box plot visualizing the salary distributions for the top 6 data job titles*
 
 #### Insights
@@ -93,7 +93,7 @@ plt.show()
 #### Results
 Here's the breakdown of the highest-paid & most in-demand skills for data analysts in the US:
 
-![Highest_Paid_and_Most_In_Demand_Skills_for_Data_Analysts_in_the_US](Project\images\Highest_Paid_and_Most_In_Demand_Skills_for_Data_Analysts_in_the_US.png)
+![Highest_Paid_and_Most_In_Demand_Skills_for_Data_Analysts_in_the_US](Project/images/Highest_Paid_and_Most_In_Demand_Skills_for_Data_Analysts_in_the_US.png)
 *Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in the US.*
 
 #### Insight
@@ -105,7 +105,7 @@ Here's the breakdown of the highest-paid & most in-demand skills for data analys
 
 To identify the most optimal skills to learn ( the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn.
 
-View my notebook with detailed steps here: [5_Optimal_Skill.ipynb](Project\images\optimal_skills_DA_US.png)
+View my notebook with detailed steps here: [5_Optimal_Skill.ipynb](Project/images/optimal_skills_DA_US.png)
 
 ### Visualize Data : 
 ```python
