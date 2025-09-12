@@ -65,7 +65,7 @@ plt.show()
 ```
 
 #### Results
-![Visualization_of_Salary_Disribution_of_Data_Jobs_in_the_US](Project\images\Skill_Trend_DA.png)
+![Visualization_of_Salary_Disribution_of_Data_Jobs_in_the_US](Project\images\Salary_Distribution_in_US.png)
 *Box plot visualizing the salary distributions for the top 6 data job titles*
 
 #### Insights
